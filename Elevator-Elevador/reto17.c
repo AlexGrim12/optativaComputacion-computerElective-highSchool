@@ -22,11 +22,8 @@ int main()
 	{
 
 		system("cls");
-
 		printf("Programa de control de elevadores\n");
-
 		printf("Digite el n%cmero del elevador [1-5]: ", 163);
-
 		scanf("%i", &idElevador);
 
 		if (j > 0)
@@ -38,14 +35,10 @@ int main()
 		{
 
 			printf("Dame el nivel donde se tomar%c el elevador\n", 160);
-
 			scanf("%i", &nivelOrigen);
-
 			if (nivelDestino != 0)
 			{
-
 				printf("El elevador esta en el piso: %i. Espere su llegada.\n", nivelDestino);
-
 				if (nivelDestino < nivelOrigen)
 				{
 					for (nivelDestino + 1; nivelDestino <= nivelOrigen; nivelDestino = nivelDestino + 1)
@@ -70,7 +63,6 @@ int main()
 			capacidadElevador == 0;
 
 			printf("Dame n%cmero total de personas que abordar%cn el elevador:\n", 163, 160);
-
 			scanf("%i", &totalPersonas);
 
 			if (totalPersonas < 1)
@@ -86,9 +78,7 @@ int main()
 				{
 
 					printf("Dame el peso de la persona %i\n", contPersonas);
-
 					scanf("%f", &pesoPersona);
-
 					capacidadElevador = capacidadElevador + pesoPersona;
 				}
 
@@ -107,23 +97,14 @@ int main()
 					{
 
 						printf("Panel de control\n");
-
 						printf("Piso 0\n");
-
 						printf("Piso 1\n");
-
 						printf("Piso 2\n");
-
 						printf("Piso 3\n");
-
 						printf("Piso 4\n");
-
 						printf("Piso 5\n");
-
 						printf("6 Bot�n de emergencia\n");
-
 						printf("Seleccione el piso: ");
-
 						scanf("%i", &nivelDestino);
 
 						switch (nivelDestino)
@@ -215,10 +196,8 @@ int main()
 			elevadores[idElevador][j];
 		}
 
-		printf("\n�Quiere cargar el programa otra vez? [S/N]: ");
-
+		printf("\n¿Quiere cargar el programa otra vez? [S/N]: ");
 		fflush(stdin);
-
 		scanf("%c", &finPrograma);
 	}
 
